@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> z-index </title>
+    <style type="text/css">
+#MainContainer{
+width: 400px;
+height: 400px;
+background-color: blue;
+position: relative;
+border: 8px dashed #FFF;
+margin: 15px
+}
+ #lorem1, #lorem2, #lorem3{
+width: 180px;
+height: 180px;
+ }
+#number{
+width: 20px;
+height: 20px;
+background-color: #FFF;
+color: #000;
+text-align: center;
+}
+
+#lorem1{
+background-color: #020114; 
+left: 50px;
+top: 70px;
+z-index: 1;
+}
+
+#lorem2{
+    background-color: #6859FF;
+    right: 65px;
+    top: 30px;
+    z-index: 2;
+}
+
+#lorem3{
+    background-color: #B4ADF8;
+    right: 100px;
+    top: 100px;
+    z-index: 3;
+}
+
+
+
+    </style>
+</head>
+<body>
+ 
+  <div id="MainContainer">
+
+<div id="lorem1">
+</div id="number"> 1 </div>
+</div >
+
+<div id="lorem2">
+  <div id="number">2</div>
+</div>
+  
+<div id="lorem3">
+  <div id="number">3</div>
+</div>
+
+
+
+  </div>
+    
+
+
+</body>
+</html>
